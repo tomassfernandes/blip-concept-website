@@ -148,49 +148,59 @@ export default function Header() {
             >
               <ul className="nav-drop-down-menu-ul">
                 <li>
-                  <a>How Blip are you?</a>
+                  <a className="nav-drop-down-text">How Blip are you?</a>
                 </li>
                 <li>
-                  <a>Perks and benefits</a>
+                  <a className="nav-drop-down-text">Perks and benefits</a>
                 </li>
                 <li>
-                  <a>Ways of working</a>
+                  <a className="nav-drop-down-text">Ways of working</a>
                 </li>
                 <li>
-                  <a>Learning and development</a>
+                  <a className="nav-drop-down-text">Learning and development</a>
                 </li>
                 <li>
-                  <a>Diversity, equity and inclusion</a>
+                  <a className="nav-drop-down-text">
+                    Diversity, equity and inclusion
+                  </a>
                 </li>
                 <li>
-                  <a>Communities</a>
+                  <a className="nav-drop-down-text">Communities</a>
                 </li>
                 <li>
-                  <a>CSR and sustainability</a>
+                  <a className="nav-drop-down-text">CSR and sustainability</a>
                 </li>
               </ul>
             </div>
           </li>
 
-          <li className="nav-link">
+          <li
+            className="nav-link"
+            onMouseEnter={handleShowDropDown2}
+            onMouseLeave={handleHideDropDown2}
+          >
             <a href="#" className="nav-link-text">
               Our Teams
             </a>
             <span className="nav-drop-down-svg">{arrowDropDown}</span>
 
-            <div className="nav-drop-down-menu nav-drop-down-menu-width-2">
+            <div
+              className={`nav-drop-down-menu nav-drop-down-menu-width-2 ${
+                navDropDown2IsOpen && "nav-drop-down-menu-visible"
+              }`}
+            >
               <ul className="nav-drop-down-menu-ul">
                 <li>
-                  <a>Blip Teams</a>
+                  <a className="nav-drop-down-text">Blip Teams</a>
                 </li>
                 <li>
-                  <a>Technology</a>
+                  <a className="nav-drop-down-text">Technology</a>
                 </li>
                 <li>
-                  <a>Corporate</a>
+                  <a className="nav-drop-down-text">Corporate</a>
                 </li>
                 <li>
-                  <a>Early Talent</a>
+                  <a className="nav-drop-down-text">Early Talent</a>
                 </li>
               </ul>
             </div>
