@@ -140,7 +140,13 @@ export default function Header() {
             <a href="#" className="nav-link-text">
               Working @ Blip
             </a>
-            <span className="nav-drop-down-svg">{arrowDropDown}</span>
+            <span
+              className={`nav-drop-down-svg ${
+                navDropDown1IsOpen && "nav-drop-down-svg-rotation"
+              }`}
+            >
+              {arrowDropDown}
+            </span>
             <div
               className={`nav-drop-down-menu nav-drop-down-menu-width-1 ${
                 navDropDown1IsOpen && "nav-drop-down-menu-visible"
@@ -182,7 +188,13 @@ export default function Header() {
             <a href="#" className="nav-link-text">
               Our Teams
             </a>
-            <span className="nav-drop-down-svg">{arrowDropDown}</span>
+            <span
+              className={`nav-drop-down-svg ${
+                navDropDown2IsOpen && "nav-drop-down-svg-rotation"
+              }`}
+            >
+              {arrowDropDown}
+            </span>
 
             <div
               className={`nav-drop-down-menu nav-drop-down-menu-width-2 ${

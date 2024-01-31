@@ -28,6 +28,12 @@ ul {
   margin: 0 auto;
 }
 
+.heading-primary {
+  color: white;
+  font-size: 6.4rem;
+  text-align: center;
+}
+
 :root {
   --main-color: #009cde;
   --background-dark-color: #002f43;

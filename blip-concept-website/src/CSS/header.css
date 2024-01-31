@@ -33,6 +33,12 @@
 .nav-drop-down-svg {
   margin-top: 0.5rem;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-drop-down-svg-rotation {
+  transform: rotate(180deg);
+  margin-top: -0.5rem;
 }
 
 .nav-btn {
