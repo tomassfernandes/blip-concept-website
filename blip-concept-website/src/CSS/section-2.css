@@ -1,0 +1,63 @@
+.section-2 {
+  background-color: var(--background-dark-color);
+  padding: 9.6rem 0rem;
+}
+
+.section-2-grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 2.4rem;
+}
+
+.section-2-div {
+  padding-top: 4.2rem;
+  padding-bottom: 4.2rem;
+  padding-left: 2.2rem;
+  padding-right: 10rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.section-2-left-div {
+  background-color: #f7fcff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.section-2-right-div {
+  background-color: var(--main-color);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding-right: 12rem;
+}
+
+.section-2-heading {
+  color: #001016;
+  font-size: 1.6rem;
+}
+
+.section-2-div p {
+  font-size: 3.2rem;
+  margin-top: 5rem;
+  color: #001016;
+}
+
+.section-2-btn {
+  width: fit-content;
+  padding: 1.2rem 4.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+
+.section-2-left-btn {
+  background-color: var(--background-dark-color);
+  color: white;
+}
+
+.section-2-right-btn {
+  background-color: white;
+  color: var(--background-dark-color);
+}
