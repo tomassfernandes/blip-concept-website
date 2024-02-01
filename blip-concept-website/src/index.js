@@ -1,15 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import HomePage from "./HomePage";
+import App from "./App";
 
 import "./CSS/general.css";
 import "./CSS/header.css";
 import "./CSS/cta-section.css";
 
+import { register } from "swiper/element/bundle";
+register();
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HomePage />
+    <App />
   </React.StrictMode>
 );

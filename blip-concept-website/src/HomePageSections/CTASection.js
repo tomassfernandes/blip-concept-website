@@ -1,6 +1,9 @@
+import ImageSlider from "../HomePageItems/ImageSlider";
+
 export default function CTASection() {
   return (
     <section className="cta-section">
+      <ImageSlider />
       <div className="section">
         <div className="cta-section-grid">
           <div className="cta-section-text-div">

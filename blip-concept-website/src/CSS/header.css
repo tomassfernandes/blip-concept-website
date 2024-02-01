@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 2.2rem 3.6rem;
+  background-color: white;
 }
 
 .nav {
@@ -60,6 +61,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 1;
 }
 
 .nav-drop-down-menu-width-1 {
