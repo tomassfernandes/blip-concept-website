@@ -34,7 +34,7 @@ export default function Section1() {
             <button
               onMouseEnter={handleBtnActive}
               onMouseLeave={handleBtnNonActive}
-              className="section-1-btn"
+              className="section-main-btn"
             >
               MORE ABOUT BLIP
             </button>

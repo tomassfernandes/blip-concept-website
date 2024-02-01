@@ -8,6 +8,7 @@ import "./CSS/header.css";
 import "./CSS/cta-section.css";
 import "./CSS/section-1.css";
 import "./CSS/section-2.css";
+import "./CSS/section-3.css";
 
 import { register } from "swiper/element/bundle";
 register();

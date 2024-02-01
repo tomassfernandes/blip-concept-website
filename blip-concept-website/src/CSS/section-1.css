@@ -17,9 +17,10 @@
 
 .section-1-text-div p {
   font-size: 1.4rem;
+  color: var(--text-dark-blue);
 }
 
-.section-1-btn {
+.section-main-btn {
   padding: 1.2rem 2.4rem;
   width: fit-content;
   margin-top: 1.2rem;
@@ -34,7 +35,7 @@
   position: relative;
 }
 
-.section-1-btn::after {
+.section-main-btn::after {
   background-color: var(--main-color);
   border-radius: 5px;
   content: "";
@@ -51,11 +52,11 @@
   z-index: -1;
 }
 
-.section-1-btn:hover::after {
+.section-main-btn:hover::after {
   transform: translate(0, 0);
 }
 
-.section-1-btn:hover {
+.section-main-btn:hover {
   border: 2px solid transparent;
   color: white;
   transform: scale(1.05);
