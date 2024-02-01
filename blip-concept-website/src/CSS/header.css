@@ -29,6 +29,7 @@
   cursor: pointer;
   font-size: 1.6rem;
   padding: 1.2rem 0rem;
+  color: var(--text-dark-blue);
 }
 
 .nav-drop-down-svg {
@@ -44,11 +45,17 @@
 
 .nav-btn {
   font-size: 1.6rem;
-  padding: 0.8rem;
+  padding: 0.8rem 1.6rem;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s;
   background-color: var(--main-color);
+  color: var(--text-dark-blue);
+}
+
+.nav-btn:hover {
+  background-color: var(--background-dark-color);
+  color: white;
 }
 
 .nav-drop-down-menu {

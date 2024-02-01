@@ -6,6 +6,7 @@ import App from "./App";
 import "./CSS/general.css";
 import "./CSS/header.css";
 import "./CSS/cta-section.css";
+import "./CSS/section-1.css";
 
 import { register } from "swiper/element/bundle";
 register();

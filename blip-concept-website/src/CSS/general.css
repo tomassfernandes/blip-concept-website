@@ -34,8 +34,17 @@ ul {
   text-align: center;
 }
 
+.heading-secondary {
+  font-size: 4.8rem;
+  color: var(--text-dark-blue);
+  line-height: 1.2;
+}
+
 :root {
   --main-color: #009cde;
   --background-dark-color: #002f43;
   --cta-background-color: #002f43c1;
+  --text-dark-blue: #002a3c;
+  --purple-color: #6e00de;
+  --light-background-color: #e6f5fc6a;
 }

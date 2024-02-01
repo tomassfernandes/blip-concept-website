@@ -1,0 +1,105 @@
+.section-1 {
+  background-color: var(--light-background-color);
+}
+
+.section-1-grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.section-1-text-div {
+  padding: 9.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.section-1-text-div p {
+  font-size: 1.4rem;
+}
+
+.section-1-btn {
+  padding: 1.2rem 2.4rem;
+  width: 40%;
+  margin-top: 1.2rem;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  color: var(--main-color);
+  background: transparent;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-1-btn::after {
+  background-color: var(--main-color);
+  border-radius: 5px;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.3s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.section-1-btn:hover::after {
+  transform: translate(0, 0);
+}
+
+.section-1-btn:hover {
+  border: 2px solid transparent;
+  color: white;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+.section-1-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.section-1-img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.section-1-shape-animation-1 {
+  position: absolute;
+  top: 5rem;
+  border-top-left-radius: 10px;
+  left: 0;
+  height: 20rem;
+  width: 20rem;
+  z-index: -1;
+  background-color: var(--purple-color);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.section-1-shape-animation-2 {
+  position: absolute;
+  bottom: 5rem;
+  border-bottom-right-radius: 10px;
+  right: 0;
+  height: 20rem;
+  width: 20rem;
+  z-index: -1;
+  background-color: var(--purple-color);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.section-1-shape-animation-active {
+  opacity: 1;
+}
