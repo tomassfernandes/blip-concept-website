@@ -1,0 +1,29 @@
+.certificates-section {
+  background-color: var(--background-dark-color);
+  padding: 9.6rem 0;
+}
+
+.certificates-heading-secondary {
+  color: white;
+  text-align: center;
+  margin-bottom: 4.2rem;
+  font-size: 3.2rem;
+  max-width: 70rem;
+  margin: 0 auto 4.2rem auto;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2.2rem;
+}
+
+.certificates-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificates-img {
+  width: 50%;
+}

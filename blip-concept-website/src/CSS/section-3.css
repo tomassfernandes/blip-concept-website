@@ -1,6 +1,6 @@
 .section-3 {
   background-color: var(--light-background-color);
-  padding-top: 2.4rem;
+  padding: 4.2rem 0rem;
 }
 
 .section-3-grid {
@@ -41,7 +41,7 @@
   height: 20rem;
   width: 20rem;
   z-index: -1;
-  background-color: #fca63c;
+  background-color: var(--purple-color);
   opacity: 0;
   transition: all 0.5s;
   transform: scale(0.1);
@@ -55,7 +55,7 @@
   height: 20rem;
   width: 20rem;
   z-index: -1;
-  background-color: #fca63c;
+  background-color: var(--purple-color);
   opacity: 0;
   transition: all 0.5s;
   transform: scale(0.1);
