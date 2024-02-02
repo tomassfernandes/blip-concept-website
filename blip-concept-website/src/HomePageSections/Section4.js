@@ -75,11 +75,20 @@ export default function Section4() {
       <div className="section">
         <div className="section-4-grid">
           <div className="section-4-left-main-div">
+            <div className="img-background-color"></div>
+            <img
+              className="section-4-img"
+              src="/img/section-4-img.webp"
+              alt="Working at Blip"
+            />
             <h2 className="section-4-heading">At Blip we stand for</h2>
             <p>
               In our company, we are committed to fostering a culture defined by
               innovation, unwavering ethics, and a dynamic approach.
             </p>
+            <button className="section-main-btn section-4-btn">
+              BLIP'S VALUES
+            </button>
           </div>
           <div className="section-4-right-grid">
             {data.map((item) => (

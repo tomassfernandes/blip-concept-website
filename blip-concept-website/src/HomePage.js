@@ -5,6 +5,7 @@ import Section2 from "./HomePageSections/Section2";
 import Section3 from "./HomePageSections/Section3";
 import CertificatesSection from "./HomePageSections/CertificatesSection";
 import Section4 from "./HomePageSections/Section4";
+import Footer from "./HomePageSections/Footer";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Section3 />
       <Section4 />
       <CertificatesSection />
+      <Footer />
     </>
   );
 }

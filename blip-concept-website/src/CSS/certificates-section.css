@@ -1,6 +1,7 @@
 .certificates-section {
   background-color: var(--background-dark-color);
   padding: 9.6rem 0;
+  position: relative;
 }
 
 .certificates-heading-secondary {
@@ -16,6 +17,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 2.2rem;
+  margin-bottom: 12rem;
 }
 
 .certificates-img-div {
@@ -26,4 +28,25 @@
 
 .certificates-img {
   width: 50%;
+}
+
+.custom-shape-divider-bottom-1706890807 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1706890807 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1706890807 .shape-fill {
+  fill: white;
 }
