@@ -40,21 +40,24 @@ export default function Section1() {
             </button>
           </div>
           <div className="section-1-img-div">
-            <div
-              className={`section-1-shape-animation-1 ${
-                btnIsHover && "section-1-shape-animation-active"
-              }`}
-            ></div>
-            <div
-              className={`section-1-shape-animation-2 ${
-                btnIsHover && "section-1-shape-animation-active"
-              }`}
-            ></div>
-            <img
-              className="section-1-img"
-              src="/img/section-1-img.webp"
-              alt="Man working on the pc at Blip"
-            />
+            <div className="section-1-img-inner-div">
+              <img
+                className="section-1-img"
+                src="/img/section-1-img.webp"
+                alt="Man working on the pc at Blip"
+              />
+
+              <div
+                className={`section-1-shape-animation-1 ${
+                  btnIsHover && "section-1-shape-animation-active"
+                }`}
+              ></div>
+              <div
+                className={`section-1-shape-animation-2 ${
+                  btnIsHover && "section-1-shape-animation-active"
+                }`}
+              ></div>
+            </div>
           </div>
         </div>
       </div>

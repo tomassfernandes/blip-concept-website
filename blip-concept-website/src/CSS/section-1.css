@@ -67,7 +67,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.section-1-img-inner-div {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-1-img {
@@ -77,7 +83,7 @@
 
 .section-1-shape-animation-1 {
   position: absolute;
-  top: 5rem;
+  top: -10%;
   border-top-left-radius: 10px;
   left: 0;
   height: 20rem;
@@ -91,7 +97,7 @@
 
 .section-1-shape-animation-2 {
   position: absolute;
-  bottom: 5rem;
+  bottom: -10%;
   border-bottom-right-radius: 10px;
   right: 0;
   height: 20rem;

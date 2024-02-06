@@ -10,6 +10,8 @@
 }
 
 .section-2-div {
+  max-width: 95%;
+  margin: 0 auto;
   padding-top: 4.2rem;
   padding-bottom: 4.2rem;
   padding-left: 2.2rem;

@@ -7,9 +7,167 @@
     max-width: 95%;
   }
 
-  /*SECTION 1*/
+  /*----------------SECTION 1---------------*/
 
   .section-1-text-div {
-    padding: 9.6rem 2.4rem;
+    padding: 9.6rem 4.2rem;
+  }
+
+  .section-3-text-div {
+    padding: 9.6rem 4.2rem;
+  }
+}
+
+/*---------------------------------------------------
+----------------- MAX WIDTH 63EM --------------------
+-----------------------------------------------------*/
+
+@media (max-width: 63em) {
+  /*---------------SECTION 1---------------------*/
+
+  .section-1-text-div {
+    padding: 9.6rem 4.2rem;
+  }
+
+  .section-3-text-div {
+    padding: 9.6rem 4.2rem;
+  }
+}
+
+/*---------------------------------------------------
+----------------- MAX WIDTH 56EM --------------------
+-----------------------------------------------------*/
+
+@media (max-width: 56em) {
+  /*-------------------SECTION 1------------------*/
+
+  .section-1 {
+    padding-bottom: 9.6rem;
+  }
+
+  .section-1-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-1-img {
+    width: 60%;
+  }
+
+  .section-1-shape-animation-1 {
+    top: -10%;
+    left: 12%;
+  }
+
+  .section-1-shape-animation-2 {
+    bottom: -10%;
+    right: 12%;
+  }
+
+  /*------------------------SECTION 2--------------------*/
+
+  .section-2-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /*--------------------SECTION 3---------------------*/
+  .section-3-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-3-text-div {
+    order: 1;
+  }
+
+  .section-3-img-div {
+    order: 2;
+  }
+
+  .section-3-img {
+    width: 60%;
+  }
+
+  .section-3-shape-animation-1 {
+    top: -10%;
+    left: 12%;
+  }
+
+  .section-3-shape-animation-2 {
+    bottom: -10%;
+    right: 12%;
+  }
+
+  /*---------------------SECTION 4--------------------*/
+
+  .section-4-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-4-left-main-div {
+    padding: 12rem;
+    gap: 1.2rem;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+
+  .section-4-btn {
+    margin-top: 4.2rem;
+  }
+
+  .section-4-img {
+    height: auto;
+    bottom: 30rem;
+  }
+}
+
+/*---------------------------------------------------
+----------------- MAX WIDTH 40EM --------------------
+-----------------------------------------------------*/
+
+@media (max-width: 40em) {
+  /*-------------------SECTION 4--------------*/
+
+  .section-4-left-main-div {
+    padding: 6rem;
+  }
+
+  /*--------------CERTIFICATES SECTION----------------*/
+
+  .certificates-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*---------------------------------------------------
+----------------- MAX WIDTH 32EM --------------------
+-----------------------------------------------------*/
+
+@media (max-width: 32em) {
+  /*------------------SECTION 4-------------------------*/
+
+  .section-4-left-main-div {
+    padding: 4.2rem 2.4rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-4-left-main-div p {
+    text-align: center;
+  }
+
+  .section-4-heading {
+    text-align: center;
+  }
+
+  .section-4-values-div {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-4-values-div h3 {
+    text-align: center;
+  }
+
+  .section-4-values-div p {
+    text-align: center;
   }
 }

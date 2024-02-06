@@ -25,7 +25,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.section-3-img-inner-div {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-3-img {
@@ -35,7 +41,7 @@
 
 .section-3-shape-animation-1 {
   position: absolute;
-  top: 1rem;
+  top: -10%;
   border-top-right-radius: 10px;
   right: 0;
   height: 20rem;
@@ -49,7 +55,7 @@
 
 .section-3-shape-animation-2 {
   position: absolute;
-  bottom: 1rem;
+  bottom: -10%;
   border-bottom-left-radius: 10px;
   left: 0;
   height: 20rem;
