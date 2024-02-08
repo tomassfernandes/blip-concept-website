@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 export default function Header() {
   const logoDark = (
@@ -91,6 +91,40 @@ export default function Header() {
     </svg>
   );
 
+  const menuIcon = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="ionicon"
+      viewBox="0 0 512 512"
+    >
+      <path
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-miterlimit="10"
+        stroke-width="32"
+        d="M80 160h352M80 256h352M80 352h352"
+      />
+    </svg>
+  );
+
+  const closeIcon = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="ionicon"
+      viewBox="0 0 512 512"
+    >
+      <path
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="32"
+        d="M368 368L144 144M368 144L144 368"
+      />
+    </svg>
+  );
+
   const arrowDropDown = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -102,8 +136,16 @@ export default function Header() {
     </svg>
   );
 
+  const navRef = useRef();
+
   const [navDropDown1IsOpen, setNavDropDown1IsOpen] = useState(false);
   const [navDropDown2IsOpen, setNavDropDown2IsOpen] = useState(false);
+
+  const [isResponsiveNavOpen, setIsResponsiveNavOpen] = useState(false);
+
+  function showNavBar() {
+    setIsResponsiveNavOpen(!isResponsiveNavOpen);
+  }
 
   function handleShowDropDown1() {
     setNavDropDown1IsOpen(true);
@@ -126,7 +168,11 @@ export default function Header() {
   return (
     <header className="header">
       <div className="logo-div">{logoDark}</div>
-      <nav className="nav">
+      <nav
+        ref={navRef}
+        className={`nav ${isResponsiveNavOpen ? "responsive-nav" : ""}`}
+      >
+        {isResponsiveNavOpen && <div className="logo-div">{logo}</div>}
         <ul className="nav-ul">
           <li className="nav-link">
             <a className="nav-link-text">Jobs</a>
@@ -237,7 +283,18 @@ export default function Header() {
           </li>
         </ul>
         <btn className="nav-btn">JOIN US</btn>
+        <button
+          className="nav-menu-btn nav-menu-btn-close"
+          onClick={showNavBar}
+        >
+          {closeIcon}
+        </button>
       </nav>
+      <button className="nav-menu-btn" onClick={showNavBar}>
+        {menuIcon}
+      </button>
+
+      <btn className="nav-btn nav-btn-2">JOIN US</btn>
     </header>
   );
 }

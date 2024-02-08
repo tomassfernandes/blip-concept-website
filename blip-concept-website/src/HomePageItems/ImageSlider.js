@@ -14,7 +14,6 @@ export default function ImageSlider() {
   // Function to update images based on screen width
   const updateImages = () => {
     const maxWidth = window.matchMedia("(max-width: 75em)").matches;
-    console.log("maxWidth:", maxWidth);
     const newImages = maxWidth
       ? [
           { id: "1", img: "/img/blip-office-1-smaller-screen.webp" },
@@ -28,7 +27,7 @@ export default function ImageSlider() {
           { id: "3", img: "/img/blip-office-3.webp" },
           { id: "4", img: "/img/blip-office-4.webp" },
         ];
-    console.log("newImages:", newImages);
+
     setImages(newImages);
   };
 

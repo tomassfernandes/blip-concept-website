@@ -30,12 +30,18 @@
   font-size: 1.6rem;
   padding: 1.2rem 0rem;
   color: var(--text-dark-blue);
+  transition: all 0.3s;
+}
+
+.nav-link-text:hover {
+  color: var(--main-color);
 }
 
 .nav-drop-down-svg {
   margin-top: 0.5rem;
   cursor: pointer;
   transition: all 0.3s;
+  fill: var(--text-dark-blue);
 }
 
 .nav-drop-down-svg-rotation {
@@ -59,6 +65,10 @@
   background-color: var(--text-dark-blue);
   border: 2px solid var(--main-color);
   color: white;
+}
+
+.nav-btn-2 {
+  display: none;
 }
 
 .nav-drop-down-menu {
@@ -105,4 +115,14 @@
 
 .nav-drop-down-text:hover {
   color: var(--text-dark-blue);
+}
+
+header .nav-menu-btn {
+  height: 4rem;
+  width: 4rem;
+  background: none;
+  border: none;
+  color: var(--text-dark-blue);
+  display: none;
+  cursor: pointer;
 }
